@@ -1,3 +1,4 @@
+import { addBinary } from "./challenges/BinaryAddition.js";
 import { filter_list } from "./challenges/ListFiltering.js";
 import { solution } from "./challenges/Multiples3or5.js";
 
@@ -18,3 +19,11 @@ In this kata you will create a function that takes a list of non-negative intege
 */
 
 filter_list([1,2,'aasf','1','123',123])
+
+/**
+DESCRIPTION:
+Implement a function that adds two numbers together and returns their sum in binary. The conversion can be done before, or after the addition.
+
+The binary number returned should be a string.
+*/
+addBinary(5, 9)
