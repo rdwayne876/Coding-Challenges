@@ -8,6 +8,7 @@ import { filter_list } from "./challenges/ListFiltering.js";
 import { solution } from "./challenges/Multiples3or5.js";
 import { narcissistic } from "./challenges/NarcissisticNumbers.js";
 import { cakes } from "./challenges/PeteTheBaker.js";
+import { pigIt } from "./challenges/SimplePigLatin.js";
 
 /**
 DESCRIPTION:
@@ -102,3 +103,10 @@ Given n, take the sum of the digits of n. If that value has more than one digit,
  */
 
 digitalRoot(942)
+
+/**
+DESCRIPTION:
+Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.
+ */
+
+pigIt('Pig latin is cool')
