@@ -1,5 +1,6 @@
 import { addBinary } from "./challenges/BinaryAddition.js";
 import { DNAStrand } from "./challenges/ComplementaryDNA.js";
+import { generateHashtag } from "./challenges/HashtagGenerator.js";
 import { filter_list } from "./challenges/ListFiltering.js";
 import { solution } from "./challenges/Multiples3or5.js";
 import { narcissistic } from "./challenges/NarcissisticNumbers.js";
@@ -48,3 +49,18 @@ A Narcissistic Number (or Armstrong Number) is a positive number which is the su
 */
 
 narcissistic(153)
+
+/**
+DESCRIPTION:
+The marketing team is spending way too much time typing in hashtags.
+Let's help them with our own Hashtag Generator!
+
+Here's the deal:
+
+It must start with a hashtag (#).
+All words must have their first letter capitalized.
+If the final result is longer than 140 chars it must return false.
+If the input or the result is an empty string it must return false.
+*/
+
+generateHashtag("Hello there thanks for trying my Kata")
