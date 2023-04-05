@@ -10,6 +10,7 @@ import { narcissistic } from "./challenges/NarcissisticNumbers.js";
 import { cakes } from "./challenges/PeteTheBaker.js";
 import { pigIt } from "./challenges/SimplePigLatin.js";
 import { ipsBetween } from "./challenges/countIPAddresses.js";
+import { decodeMorse } from "./challenges/morseCodeDecoder.js";
 
 /**
 DESCRIPTION:
@@ -120,3 +121,13 @@ All inputs will be valid IPv4 addresses in the form of strings. The last address
  */
 
 ipsBetween("20.0.0.10", "20.0.1.0")
+
+/**
+ * DESCRIPTION:
+
+In this kata you have to write a simple Morse code decoder. While the Morse code is now mostly superseded by voice and digital data communication channels, it still has its use in some applications around the world.
+The Morse code encodes every character as a sequence of "dots" and "dashes". For example, the letter A is coded as ·−, letter Q is coded as −−·−, and digit 1 is coded as ·−−−−. The Morse code is case-insensitive, traditionally capital letters are used. When the message is written in Morse code, a single space is used to separate the character codes and 3 spaces are used to separate words. For example, the message HEY JUDE in Morse code is ···· · −·−−   ·−−− ··− −·· ·.
+
+ */
+
+decodeMorse('.... . -.--   .--- ..- -.. .')
