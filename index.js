@@ -1,5 +1,7 @@
+import { arrayDiff } from "./challenges/ArrayDiff.js";
 import { addBinary } from "./challenges/BinaryAddition.js";
 import { DNAStrand } from "./challenges/ComplementaryDNA.js";
+import { digitalRoot } from "./challenges/DigitalRoot.js";
 import { duplicateEncode } from "./challenges/DuplicateEncoder.js";
 import { generateHashtag } from "./challenges/HashtagGenerator.js";
 import { filter_list } from "./challenges/ListFiltering.js";
@@ -82,3 +84,21 @@ The goal of this exercise is to convert a string to a new string where each char
  */
 
 duplicateEncode("Success")
+
+/**
+DESCRIPTION:
+Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+
+It should remove all values from list a, which are present in list b keeping their order.
+ */
+
+arrayDiff([1, 2, 2, 3], [2])
+
+/**
+DESCRIPTION:
+Digital root is the recursive sum of all the digits in a number.
+
+Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer.
+ */
+
+digitalRoot(942)
