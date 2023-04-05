@@ -2,6 +2,7 @@ import { addBinary } from "./challenges/BinaryAddition.js";
 import { DNAStrand } from "./challenges/ComplementaryDNA.js";
 import { filter_list } from "./challenges/ListFiltering.js";
 import { solution } from "./challenges/Multiples3or5.js";
+import { narcissistic } from "./challenges/NarcissisticNumbers.js";
 
 /**
 DESCRIPTION:
@@ -40,3 +41,10 @@ In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G
 */
 
 DNAStrand("ATTGC")
+
+/**
+DESCRIPTION:
+A Narcissistic Number (or Armstrong Number) is a positive number which is the sum of its own digits, each raised to the power of the number of digits in a given base. Your code must return true or false (not 'true' and 'false') depending upon whether the given number is a Narcissistic number in base 10.
+*/
+
+narcissistic(153)
