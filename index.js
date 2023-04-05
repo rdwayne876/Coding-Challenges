@@ -11,6 +11,7 @@ import { cakes } from "./challenges/PeteTheBaker.js";
 import { pigIt } from "./challenges/SimplePigLatin.js";
 import { ipsBetween } from "./challenges/countIPAddresses.js";
 import { decodeMorse } from "./challenges/morseCodeDecoder.js";
+import { rgb } from "./challenges/rgbToHex.js";
 
 /**
 DESCRIPTION:
@@ -131,3 +132,10 @@ The Morse code encodes every character as a sequence of "dots" and "dashes". For
  */
 
 decodeMorse('.... . -.--   .--- ..- -.. .')
+
+/**
+ * DESCRIPTION:
+The rgb function is incomplete. Complete it so that passing in RGB decimal values will result in a hexadecimal representation being returned. Valid decimal values for RGB are 0 - 255. Any values that fall out of that range must be rounded to the closest valid value.
+ */
+
+rgb(148, 0, 211)
