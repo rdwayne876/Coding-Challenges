@@ -9,6 +9,7 @@ import { solution } from "./challenges/Multiples3or5.js";
 import { narcissistic } from "./challenges/NarcissisticNumbers.js";
 import { cakes } from "./challenges/PeteTheBaker.js";
 import { pigIt } from "./challenges/SimplePigLatin.js";
+import { ipsBetween } from "./challenges/countIPAddresses.js";
 
 /**
 DESCRIPTION:
@@ -26,7 +27,7 @@ DESCRIPTION:
 In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
 */
 
-filter_list([1,2,'aasf','1','123',123])
+filter_list([1, 2, 'aasf', '1', '123', 123])
 
 /**
 DESCRIPTION:
@@ -77,7 +78,7 @@ Pete likes to bake some cakes. He has some recipes and ingredients. Unfortunatel
 Write a function cakes(), which takes the recipe (object) and the available ingredients (also an object) and returns the maximum number of cakes Pete can bake (integer). For simplicity there are no units for the amounts (e.g. 1 lb of flour or 200 g of sugar are simply 1 or 200). Ingredients that are not present in the objects, can be considered as 0.
 */
 
-cakes({flour: 500, sugar: 200, eggs: 1}, {flour: 1200, sugar: 1200, eggs: 5, milk: 200})
+cakes({ flour: 500, sugar: 200, eggs: 1 }, { flour: 1200, sugar: 1200, eggs: 5, milk: 200 })
 
 /**
 DESCRIPTION:
@@ -110,3 +111,12 @@ Move the first letter of each word to the end of it, then add "ay" to the end of
  */
 
 pigIt('Pig latin is cool')
+
+/**
+ * DESCRIPTION:
+Implement a function that receives two IPv4 addresses, and returns the number of addresses between them (including the first one, excluding the last one).
+
+All inputs will be valid IPv4 addresses in the form of strings. The last address will always be greater than the first one.
+ */
+
+ipsBetween("20.0.0.10", "20.0.1.0")
