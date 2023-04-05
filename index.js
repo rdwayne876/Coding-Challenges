@@ -1,5 +1,6 @@
 import { addBinary } from "./challenges/BinaryAddition.js";
 import { DNAStrand } from "./challenges/ComplementaryDNA.js";
+import { duplicateEncode } from "./challenges/DuplicateEncoder.js";
 import { generateHashtag } from "./challenges/HashtagGenerator.js";
 import { filter_list } from "./challenges/ListFiltering.js";
 import { solution } from "./challenges/Multiples3or5.js";
@@ -74,3 +75,10 @@ Write a function cakes(), which takes the recipe (object) and the available ingr
 */
 
 cakes({flour: 500, sugar: 200, eggs: 1}, {flour: 1200, sugar: 1200, eggs: 5, milk: 200})
+
+/**
+DESCRIPTION:
+The goal of this exercise is to convert a string to a new string where each character in the new string is "(" if that character appears only once in the original string, or ")" if that character appears more than once in the original string. Ignore capitalization when determining if a character is a duplicate.
+ */
+
+duplicateEncode("Success")
