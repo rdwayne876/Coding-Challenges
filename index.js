@@ -5,6 +5,7 @@ import { digitalRoot } from "./challenges/DigitalRoot.js";
 import { duplicateEncode } from "./challenges/DuplicateEncoder.js";
 import { generateHashtag } from "./challenges/HashtagGenerator.js";
 import { filter_list } from "./challenges/ListFiltering.js";
+import { moveZeros } from "./challenges/MovingZerosToEnd.js";
 import { solution } from "./challenges/Multiples3or5.js";
 import { narcissistic } from "./challenges/NarcissisticNumbers.js";
 import { cakes } from "./challenges/PeteTheBaker.js";
@@ -139,3 +140,10 @@ The rgb function is incomplete. Complete it so that passing in RGB decimal value
  */
 
 rgb(148, 0, 211)
+
+/**
+ * DESCRIPTION:
+Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
+ */
+
+moveZeros([false,1,0,1,2,0,1,3,"a"])
