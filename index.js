@@ -3,6 +3,7 @@ import { addBinary } from "./challenges/BinaryAddition.js";
 import { DNAStrand } from "./challenges/ComplementaryDNA.js";
 import { digitalRoot } from "./challenges/DigitalRoot.js";
 import { duplicateEncode } from "./challenges/DuplicateEncoder.js";
+import { firstNonRepeatingLetter } from "./challenges/FirstNonRepeatingCharacter.js";
 import { generateHashtag } from "./challenges/HashtagGenerator.js";
 import { filter_list } from "./challenges/ListFiltering.js";
 import { moveZeros } from "./challenges/MovingZerosToEnd.js";
@@ -146,4 +147,39 @@ rgb(148, 0, 211)
 Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
  */
 
-moveZeros([false,1,0,1,2,0,1,3,"a"])
+moveZeros([false, 1, 0, 1, 2, 0, 1, 3, "a"])
+
+/**
+ * DESCRIPTION:
+Write a function named first_non_repeating_letter that takes a string input, and returns the first character that is not repeated anywhere in the string.
+ */
+
+firstNonRepeatingLetter('Stress')
+
+/**
+ * DESCRIPTION:
+Complete the function/method (depending on the language) to return true/True when its argument is an array that has the same nesting structures and same corresponding length of nested arrays as the first array.
+ */
+
+Array.prototype.sameStructureAs = function (other) {
+    if (this.length !== other.length) {
+        return false;
+    }
+
+    for (let i = 0; i < this.length; i++) {
+        if (Array.isArray(this[i])) {
+            if (!Array.isArray(other[i])) {
+                return false;
+            }
+            if (!this[i].sameStructureAs(other[i])) {
+                return false;
+            }
+        } else if (Array.isArray(other[i])) {
+            return false;
+        }
+    }
+
+    return true;
+};
+
+[ [ [ ], [ ] ] ].sameStructureAs( [ [ 1, 1 ] ] );  
